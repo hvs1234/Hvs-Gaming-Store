@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu' , sans-serif;
+    box-sizing: border-box;
+}
+.home-body
+{
+    height: auto;
+}
+.home-body::before
+{
+    content: '';
+    background: url('./images/img2.png') no-repeat center center/cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+.controller-body
+{
+    height: auto;
+}
+.controller-body::before
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('./images/img10.jpg') no-repeat center center/cover;
+    filter: brightness(1);
+}
+.others-body
+{
+    height: auto;
+}
+.others-body::before
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: lightblue;
+}
+.buy-body
+{
+    height: auto;
+}
+.buy-body::before
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('./images/img8.jpg') no-repeat center center/cover;
+}
+.home-container
+{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+}
+.controller-container
+{
+    width: 100%;
+    min-height: 20vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+}
+.others-container
+{
+    width: 100%;
+    min-height: 20vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+}
+.buy-container
+{
+    width: 100%;
+    min-height: 20vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+}
+.navbar
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 0px solid black;
+    background-color: lightgrey;
+    padding: 0.6rem 4rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgb(3, 28, 34);
+}
+.home-nav
+{
+    background: url('./images/img9.jpg') no-repeat center center/cover;
+}
+.controller-nav
+{
+    background: url('./images/img8.jpg') no-repeat center center/cover;
+    opacity: 1;
+    box-shadow: 0px 2px 2px aqua;
+}
+.others-nav
+{
+    background-color: lightblue;
+}
+.buy-nav
+{
+    background: url('./images/img8.jpg') no-repeat center center/cover;
+    box-shadow: 0px 2px 2px aqua;
+}
+.logo
+{
+    width: 60px;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    margin: 30px 0;
+}
+.home-logo
+{
+    background-color: rgb(204, 194, 197);
+    border-radius: 50%;
+}
+.buy-logo
+{
+    border-radius: 50%;
+    background-color: rgb(9, 57, 63);
+}
+.menu-icon
+{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+    margin-right: 1rem;
+}
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+    position: relative;
+    bottom: 10px;
+}
+.link
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 18px;
+} .link:hover{color: darkblue;}
+.home-link
+{
+    color: #000000;
+    font-weight: 800;
+    font-size: 20px;
+} .home-link:hover{color: rgb(76, 0, 255);}
+.buy-link
+{
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 3px;
+} .buy-link:hover{color: aqua;}
+.controller-link
+{
+    font-size: 1.2rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-right: 5px;
+} .controller-link:hover{color: aqua;}
+.home-menu
+{
+    width: 25px;    
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1
+{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 1rem;
+}
+.col-1::after
+{
+    content: '';
+    width: 10px; 
+    height: 57%;
+    background: linear-gradient(to right,#ff469f,#ff6062);
+    position: absolute;
+    left: -40px;
+    top: 30px;
+}
+.col-1 h3,p
+{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-family: 'Dosis' , sans-serif;
+}
+.col-1 h3
+{
+    color: rgb(2, 2, 82);
+    font-weight: 800;
+}
+.col-1 h2
+{
+    font-size: 5rem;
+    color: rgb(6, 9, 53);
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 20px 0 10px;
+}
+.col-1 h4
+{
+    font-size: 40px;
+    margin: 30px 0;
+    color: #2e053a;
+    font-weight: 800;
+}
+.col-2
+{
+    position: relative;
+    flex-basis: 60%;
+    right: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.col-2 .controller
+{
+    width: 90%;
+    position: relative;
+    top: 1rem;
+}
+.color-box
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right,#ff54a2,#ff575a);
+    border-radius: 20px 50px 20px 60px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+button
+{
+    border: 0;
+}
+.home-btn
+{
+    width: 140px;
+    border: 0px;
+    border-radius: 6px;
+    padding: 15px 30px;
+    width: 100%;
+    outline: 0;
+    color: #fff;
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    cursor: pointer;
+    align-items: center;
+    background: linear-gradient(to right,crimson,rgb(238, 9, 85),rgb(255, 0, 128));
+    box-shadow: 0px 5px 2px rgb(5, 54, 54);
+}
+.home-btn img
+{
+    width: 30px;
+    padding-left: 5px;
+    display: none;
+}
+.home-btn:hover img
+{
+    display: block;
+}
+.home-btn:hover
+{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(208, 218, 218);
+    transition: 0.5s;
+}
+.add-btn
+{
+    text-align: center;
+}
+.add-btn img
+{
+    width: 35px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.add-btn p small
+{
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.social-links
+{
+    text-align: center;
+}
+.social-links a i
+{
+    font-size: 2rem;
+    color: black;
+    margin: 30px;
+    cursor: pointer;
+} .social-links i:hover{color: rgb(24, 12, 92);}
+.home-footer
+{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+.home-footer h1,span
+{
+    font-family: 'Dosis' , sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.home-footer h1 span
+{
+    color: aqua;
+}
+
+/* Buy Styling*/
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 2rem 0;
+    margin-top: 0px;
+}
+.input-here
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.input-here label
+{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 3px;
+    font-weight: 100;
+} .input-here label:hover{color: aqua; cursor: grab;}
+.input-here input,textarea
+{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    width: 50rem;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    box-shadow: 0px 2px 2px aqua;
+    color: aquamarine;
+    font-weight: 100;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 3px;
+    background: transparent;
+}
+.input-here button
+{
+    border: 0;
+    color: aquamarine;
+    background: transparent;
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    box-shadow: 0px 2px 2px aqua;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+} .input-here button:hover{color: aqua;}
+.buy-footer
+{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background: black;
+}
+.buy-footer h1
+{
+    color: aquamarine;
+    font-size: 1.5rem;
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+/* Controller-Styling */
+
+.controller-box
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+}
+.controller-boxes
+{
+    border: 0px solid aqua;
+    box-shadow: 0px 2px 2px aquamarine;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5rem;
+    margin: 3rem 2.1rem;
+    cursor: pointer;
+    background: linear-gradient(to right,black,rgb(17, 82, 143));
+    position: relative;
+    left: 5px;
+} .controller-boxes:hover{background: linear-gradient(to right,black,rgb(10, 99, 99));}
+.controller-boxes img
+{
+    width: 10rem;
+    height: 10rem;
+    margin-top: -10px;
+}
+.controller-boxes h1,h3
+{
+    color: white;
+    margin-bottom: 1rem;
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.controller-boxes button
+{
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background: linear-gradient(to right,rgb(114, 13, 33),crimson,rgb(255, 59, 98));
+}
+.controller-btn
+{
+    color: white;
+    text-decoration: none;
+    font-family: 'Satisfy' , sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+} .controller-btn:hover{color: aqua;}
+
+.controller-footer
+{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+.controller-footer h1
+{
+    font-family: 'Dosis' , sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width:700px)
+{
+    .navbar
+    {
+        padding: 0.1rem 3rem;
+    }
+    nav ul
+    {
+        width: 100%;
+        background: linear-gradient(to right,#ff54a2,#ff575a);
+        position: absolute;
+        top: 130px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li
+    {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .link
+    {
+        font-size: 1rem;
+        color: white;
+    }
+    .menu-icon
+    {
+        display: block;
+    }
+    #menulist
+    {
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .row
+    {
+        flex-direction: row-reverse;
+        margin: 100px 0;
+    }
+    .col-1 h2
+    {
+        font-size: 3.5rem;
+    }
+    .col-2
+    {
+        display: none;
+    }
+    .form
+    {
+        margin-top: 5rem;
+    }
+    .input-here
+    {
+        margin-top: 1rem;
+    }
+    .input-here label
+    {
+        font-size: 1.2rem;
+    }
+    .input-here input,textarea
+    {
+        width: 20rem;
+        margin-top: 0.5rem;
+    }
+    .input-here button
+    {
+        font-size: 1.2rem;
+    }
+    .controller-box
+    {
+        margin-top: 3rem;
+    }
+    .controller-boxes 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 2rem 0 2rem -1rem;
+        position: relative;
+        left: 8px;
+    }
+    .controller-footer
+    {
+        text-align: center;
+    }
+    .controller-footer h1
+    {
+        font-size: 1rem;
+    }
+}
